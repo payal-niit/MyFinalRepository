@@ -33,4 +33,17 @@ public String getSign(org.springframework.ui.Model model)
 	 
 	return "SignUp";
 }
+@RequestMapping("/Login.html")
+public String getLogin(org.springframework.ui.Model model)
+{
+	 
+	return "Login";
+}
+@RequestMapping("/AllProducts.html")
+public String getProducts(org.springframework.ui.Model model)
+{
+	 
+	return "AllProducts";
+}
+
 }

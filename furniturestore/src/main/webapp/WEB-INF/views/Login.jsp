@@ -49,7 +49,7 @@
       
         <li><a href="Login.html">Login</a></li>
        <li><a href="SignUp.html">Sign Up</a></li>
-       <li><a href="ContactUs.html">Contact Us</a></li>
+       <li><a href="contactus.html">Login Form</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -57,80 +57,35 @@
 </div>
 <div class="container">
 
-  <h2 class="title">Sign UP</h2>
+  <h2 class="title">Login</h2>
   <hr>
-  
    <form class="form-horizontal" role="form">
     <div class="form-group">
-      <label class="control-label col-xs-9 col-sm-2" for="first">First Name:</label>
-      <div class="col-xs-9 col-sm-3">
-        <input type="text" class="form-control" id="first" placeholder="Enter Name">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-xs-9 col-sm-2" for="middle">Middle Name:</label>
-      <div class="col-xs-9 col-sm-3">
-        <input type="text" class="form-control" id="middle" placeholder="Enter Name">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-xs-9 col-sm-2" for="last">Last Name:</label>
-      <div class="col-xs-9 col-sm-3">
-        <input type="text" class="form-control" id="last" placeholder="Enter Name">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-xs-9 col-sm-2" for="email">Age:</label>
-      <div class="col-xs-9 col-sm-3">
-        <input type="number" class="form-control" id="age" placeholder="Enter Name">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-xs-9 col-sm-2" for="pwd">City:</label>
-      <div class="col-xs-9 col-sm-3">          
-        <input type="text" class="form-control" id="cty" placeholder="Enter your city">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-xs-9 col-sm-2" for="State">Email:</label>
-      <div class="col-xs-9 col-sm-3">
-        <input type="text" class="form-control" id="email" placeholder="Enter Your Exsisting Email ID">
-      </div>
-    </div>
-     <div class="form-group">
-      <label class="control-label col-xs-9 col-sm-2" for="email">Select a UserName:</label>
+      <label class="control-label col-xs-9 col-sm-2" for="email">UserName:</label>
       <div class="col-xs-9 col-sm-3">
         <input type="text" class="form-control" id="username" placeholder="username">
       </div>
     </div>
-     <div class="form-group">
-      <label class="control-label col-xs-9 col-sm-2" for="email">Password:</label>
-      <div class="col-xs-9 col-sm-3">
-        <input type="password" class="form-control" id="password" placeholder="username">
-      </div>
-    </div>
+    
+    
     <div class="form-group">
-      <label class="control-label col-xs-9 col-sm-2" for="pwd">Gender:</label>
-      <div class="col-xs-9 col-sm-3">          
-        <input type="radio" name="gender" value="male" checked> Male
-        <input type="radio" name="gender" value="male" checked> Female
+      <label class="control-label col-xs-9 col-sm-2" for="State">Password:</label>
+      <div class="col-xs-9 col-sm-3">
+        <input type="password" class="form-control" id="pass" placeholder="Select a Password">
       </div>
     </div>
     <div class="form-group">        
       <div class="col-sm-offset-2 col-xs-9 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
-        <button type="reset" class="btn btn-default">Reset</button>
+        <button type="submit" class="btn btn-default">Register</button>
       </div>
-      
     </div>
   </form>
 </div>
   <div class="container">
-  <br><br><hr>
+  <br><br><br><br><br><br><br><br><br><br><br><hr>
   <footer>
   <p>All rights reserved</p>
   </footer>
 </div>
-
 </body>
 </html>

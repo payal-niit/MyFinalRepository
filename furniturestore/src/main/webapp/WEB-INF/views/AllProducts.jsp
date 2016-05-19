@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <title>Bootstrap Example</title>
-<meta charset="utf-8">
+<meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="resources/css/bootstrap-theme.css" />
 <link rel="stylesheet" href="resources/css/bootstrap-theme.css.map" />
@@ -19,6 +19,18 @@
 <link rel="stylesheet" href="resources/css/style.css">
 <script src="resources/js/jquery-1.12.3.min.js"></script>
 <script src="resources/js/bootstrap.min.js"></script>
+<script src="resources/js/angular.min.js"></script>
+<script src="resources/js/controller.js"></script>
+<style>
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width: 50%;
+	margin: auto;
+}
+
+tr {
+	align: center;
+}
+</style>
 
 </head>
 <body>
@@ -43,71 +55,54 @@
 
 						<li><a href="index.html">Home</a></li>
 						<li><a href="AboutUs.html">About Us</a></li>
-
+						<li><a href="AllProducts.html">Products</a></li>
 					</ul>
-
 					<ul class="nav navbar-nav navbar-right">
-
 						<li><a href="Login.html">Login</a></li>
 						<li><a href="SignUp.html">Sign Up</a></li>
 						<li><a href="ContactUs.html">Contact Us</a></li>
 					</ul>
+
 				</div>
 				<!-- /.navbar-collapse -->
+				<br>
+
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
 	</div>
-	<div class="container">
 
-		<h2 class="title">Suggestion</h2>
-		<hr>
+	<div ng-app="myApp" ng-controller="customersCtrl">
 
-		<form class="form-horizontal" role="form">
-			<div class="form-group">
-				<label class="control-label col-xs-9 col-sm-2" for="email">Email:</label>
-				<div class="col-xs-9 col-sm-3">
-					<input type="text" class="form-control" id="email"
-						placeholder="Enter Name">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-xs-9 col-sm-2" for="pwd">City:</label>
-				<div class="col-xs-9 col-sm-3">
-					<input type="text" class="form-control" id="cty"
-						placeholder="Enter your city">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-xs-9 col-sm-2" for="State">State:</label>
-				<div class="col-xs-9 col-sm-3">
-					<input type="text" class="form-control" id="state"
-						placeholder="Enter Your state">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-xs-9 col-sm-2" for="State">SUggestions:</label>
-				<div class="col-xs-9 col-sm-3">
-					<textarea rows="2" cols="5" class="form-control" id="state"
-						placeholder="Enter Your Suggestions">
-        </textarea>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-xs-9 col-sm-10">
-					<button type="submit" class="btn btn-default">Submit</button>
-					<button type="reset" class="btn btn-default">Reset</button>
-				</div>
-			</div>
-		</form>
+
+
+		<div class="container">
+
+			<hr>
+			<h2>Product List</h2>
+			<hr>
+			<label>Search BOX: <input type="text" name="a" ng-model="search"></label>
+			<table id="searchObjResults"
+				class="table-responsive table table-bordered table-condensed table table-hover">
+				<tr>
+					<th>Product ID</th>
+					<th>Group Name</th>
+					<th>Name</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Photos</th>
+
+				</tr>
+				<tr ng-repeat="x in myData | filter:search | filter:search:Guitars">
+					<td>{{x.ProductID}}</td>
+					<td>{{x.GroupName}}</td>
+					<td>{{x.Name}}</td>
+					<td>{{x.Price}}</td>
+					<td>{{x.Qty}}</td>
+					<td><img src="{{x.Photo}}" width="50" height="50"></td>
+				</tr>
+			</table>
+		</div>
 	</div>
-	<div class="container">
-		<br> <br> <br> <br> <br> <br> <br>
-		<hr>
-		<footer>
-			<p>All rights reserved</p>
-		</footer>
-	</div>
-
 </body>
 </html>
