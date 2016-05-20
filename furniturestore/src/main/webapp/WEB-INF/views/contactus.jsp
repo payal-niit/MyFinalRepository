@@ -1,24 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@ taglib prefix="u" uri="http://www.springframework.org/tags" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Bootstrap Example</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="resources/css/bootstrap-theme.css" />
-<link rel="stylesheet" href="resources/css/bootstrap-theme.css.map" />
-<link rel="stylesheet" href="resources/css/bootstrap-theme.min.css" />
-<link rel="stylesheet" href="resources/css/bootstrap-theme.min.css.map" />
-<link rel="stylesheet" href="resources/css/bootstrap.css" />
-<link rel="stylesheet" href="resources/css/bootstrap.css.map" />
-<link rel="stylesheet" href="resources/css/bootstrap.min.css" />
-<link rel="stylesheet" href="resources/css/bootstrap.min.css.map" />
+<link rel="stylesheet" href="<u:url value="resources/css/bootstrap-theme.css"/>" />
+<link rel="stylesheet" href="<u:url value="resources/css/bootstrap-theme.css.map" />" />
+<link rel="stylesheet" href="<u:url value="resources/css/bootstrap-theme.min.css" />" />
+<link rel="stylesheet" href="<u:url value="resources/css/bootstrap-theme.min.css.map" />
+<link rel="stylesheet" href="<u:url value="resources/css/bootstrap.css" />" />
+<link rel="stylesheet" href="<u:url value="resources/css/bootstrap.css.map" />" />
+<link rel="stylesheet href="<u:url value="resources/css/bootstrap.min.css" />" />
+<link rel="stylesheet" href="<u:url value="resources/css/bootstrap.min.css.map" />" />
 
-<link rel="stylesheet" href="resources/css/bootstrap.min.css">
-<link rel="stylesheet" href="resources/css/style.css">
-<script src="resources/js/jquery-1.12.3.min.js"></script>
-<script src="resources/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="<u:url value="resources/css/bootstrap.min.css" />" />
+<link rel="stylesheet" href="<u:url value="resources/css/style.css" />" />
+<script src="<u:url value="resources/js/jquery-1.12.3.min.js" />" ></script>
+<script src="<u:url value="resources/js/bootstrap.min.js" />" ></script>
+<script src="<u:url value="resources/js/angular.min.js" />" ></script>
+<script src="<u:url value="resources/js/controller.js" />" ></script>
 
 </head>
 <body>
@@ -59,10 +62,11 @@
 		</nav>
 	</div>
 	<div class="container">
-
-		<h2 class="title">Suggestion</h2>
+	<div class="panel-heading">
+		<h2 class="title bg-warning">Suggestion</h2></div>
 		<hr>
-
+	<div class="panel-body">
+	<div class="jumbotron">
 		<form class="form-horizontal" role="form">
 			<div class="form-group">
 				<label class="control-label col-xs-9 col-sm-2" for="email">Email:</label>
@@ -100,7 +104,7 @@
 				</div>
 			</div>
 		</form>
-	</div>
+	</div></div></div>
 	<div class="container">
 		<br> <br> <br> <br> <br> <br> <br>
 		<hr>
